@@ -20,7 +20,7 @@ y un frontend en HTML, CSS y JavaScript.
 
 2 Directorio
 
-   -cd TestApi/WebApi
+   -cd TestDiciembre2024-master\TestDiciembre2024-master
    
    ### Instalar dependencias del backend:
  Restaurar dependencias de .NET
