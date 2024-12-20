@@ -1,0 +1,7 @@
+appsettings.Development.json
+appsettings.local.json
+/vs/
+/.vs/
+/bin/
+/obj/
+.vscode/
