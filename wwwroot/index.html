@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Customer List</h1>
+    <h2 id="formTitle">Add New Customer</h2>
+    <form id="customerForm">
+        <input type="hidden" id="customerId"> 
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="gender" placeholder="Gender" required>
+        <input type="text" id="ipAddress" placeholder="IP Address" required>
+        <input type="text" id="country" placeholder="Country" required>
+        <button type="submit">Add Customer</button>
+    </form>
+    <h2>Get Customer by ID</h2>
+        <input type="number" id="customerIdInput" placeholder="Enter customer ID">
+        <button onclick="getCustomerById()">Get Customer</button>
+
+        <!-- Contenedor para mostrar los detalles del cliente -->
+        <div id="customerDetails"></div>
+    <table id="customerTable">
+        <thead>
+            <tr>
+                <th onclick="changeColumnOrder(0, 1)">ID</th>
+                <th onclick="changeColumnOrder(1, 2)">First Name</th>
+                <th onclick="changeColumnOrder(2, 3)">Last Name</th>
+                <th onclick="changeColumnOrder(3, 4)">Email</th>
+                <th onclick="changeColumnOrder(4, 5)">Gender</th>
+                <th onclick="changeColumnOrder(4, 5)">IP Address</th>
+                <th onclick="changeColumnOrder(5, 6)">Country</th>
+                <th>Actions</th> 
+            </tr>
+            <tr>
+                <th><input type="text" id="idFilter" onkeyup="filterCustomers()" placeholder="Search for id.."></th>
+                <th><input type="text" id="nameFilter" onkeyup="filterCustomers()" placeholder="Search for first name.."></th>
+                <th><input type="text" id="lastnameFilter" onkeyup="filterCustomers()" placeholder="Search for last name.."></th>
+                <th><input type="text" id="emailFilter" onkeyup="filterCustomers()" placeholder="Search for email.."></th>
+                <th><input type="text" id="genderFilter" onkeyup="filterCustomers()" placeholder="Search for gender.."></th>
+                <th><input type="text" id="addressFilter" onkeyup="filterCustomers()" placeholder="Search for address.."></th>
+                <th><input type="text" id="countryFilter" onkeyup="filterCustomers()" placeholder="Search for country.."></th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>  
+    <div class="pagination">
+        <button id="prevBtn" onclick="changePage(-1)" class="disabled">Prev</button>
+        <span id="pageNumber">Page 1</span>
+        <button id="nextBtn" onclick="changePage(1)">Next</button>
+    </div>
+    <script src="script.js"></script>
+    <script> 
+          loadCustomers();
+    </script>
+    </div>  
+</body>
+</html>

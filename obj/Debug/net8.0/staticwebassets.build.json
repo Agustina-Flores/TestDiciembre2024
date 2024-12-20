@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "dXFT8q7xKgWDXiTG8azFjjtmRtGbwFNY7SWAsrUI5ok=",
+  "Source": "WebApi",
+  "BasePath": "_content/WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApi\\wwwroot",
+      "Source": "WebApi",
+      "ContentRoot": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\index.html",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\script.js",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    }
+  ]
+}

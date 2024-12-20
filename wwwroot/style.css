@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+#customerIdInput {
+  width: 35%;
+  margin: 8px auto;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #23aacc;
+  border-radius: 4px;
+  text-align: center;
+  outline: none;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form input {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 5px; 
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  width: 50%;
+  padding: 2px;
+  background-color: #23aacc;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table th {
+  background-color: #2c3e50; /* Azul oscuro */
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #101010;
+}
+
+table th {
+  background-color: #23aacc;
+  font-weight: bold;
+}
+ 
+
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-group input {
+  width: 140px;
+  margin-top: 5px;
+}
+ 
+table tr {
+  background-color: #acc2e9; /* Celeste claro */
+}
+ 
+table tr:hover {
+  background-color: #969ba3; /* Celeste claro */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #23aacc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pagination button:hover {
+  background-color: #17a1b9;
+}
+
+.pagination button.disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+ 
