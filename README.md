@@ -8,6 +8,7 @@ y un frontend en HTML, CSS y JavaScript.
 - **.NET SDK**: [Descargar aquí](https://dotnet.microsoft.com/download)
 - **Visual Studio Code** o cualquier editor de texto.
 - **Navegador web** para probar la interfaz.
+- Newtonsoft.Json: Biblioteca para trabajar con JSON. 
 
 ## Instrucciones de instalación y ejecución
 
@@ -21,23 +22,30 @@ y un frontend en HTML, CSS y JavaScript.
 
    -cd TestApi/WebApi
    
-   Instalar dependencias del backend:
-   Restaurar dependencias de .NET
+   ### Instalar dependencias del backend:
+ Restaurar dependencias de .NET
    
    -dotnet restore
-
-   Ejecutar la API
+   
+ Newtonsoft.Json si no está presente en el proyecto:
+   
+   -dotnet add package Newtonsoft.Json
+   
+ Ejecutar la API
+ 
    -dotnet run
  
  
 La API estará disponible en la siguiente URL :
 
 Clientes: http://localhost:5029/api/customer
-Nota: Si el puerto 5029 está ocupado, el proyecto podría utilizar un puerto diferente.
+Nota: Si el puerto 5029 está ocupado, el proyecto podría utilizarse en un puerto diferente.
 
 
 ### Frontend (HTML, CSS y JavaScript)
-Pagina principal: http://localhost:5029/index.html
+El frontend se encuentra en index.html, que se puede acceder en el navegador en:
+ 
+http://localhost:5029/index.html
 
 (index.html esta en  la carpeta wwwroot.)
  
