@@ -17,32 +17,25 @@
         function filterCustomers() {
 
             //filtro por 
-            const idFilter = parseInt(document.getElementById("idFilter").value); 
-            const nameFilter = document.getElementById("nameFilter").value.toLowerCase();
-            const lastnameFilter = document.getElementById("lastnameFilter").value.toLowerCase();
-            const emailFilter = document.getElementById("emailFilter").value.toLowerCase();
-            const genderFilter = document.getElementById("genderFilter").value.toLowerCase();
-            const addressFilter = document.getElementById("addressFilter").value.toLowerCase();
-            const countryFilter = document.getElementById("countryFilter").value.toLowerCase();
+            const idFilter = document.getElementById("idFilter").value?.trim() ?? ''; 
+            const nameFilter = document.getElementById("nameFilter").value?.trim() ?? '';
+            const lastnameFilter = document.getElementById("lastnameFilter").value?.trim() ?? '';
+            const emailFilter = document.getElementById("emailFilter").value?.trim() ?? '';
+            const genderFilter = document.getElementById("genderFilter").value?.trim() ?? '';
+            const addressFilter = document.getElementById("addressFilter").value?.trim() ?? '';
+            const countryFilter = document.getElementById("countryFilter").value?.trim() ?? '';
             
             
-            //filtrar segun el filtro aplicado
-            copyCustomers = customers.filter(customer => {
-                const idActual = isNaN(idFilter) || customer.id === idFilter; 
-                const genderActual = genderFilter === "" || 
-                customer.gender.toLowerCase() === genderFilter;
-
-                return  idActual &&
+               //filtrar segun el filtro aplicado
+               copyCustomers = customers.filter(customer => 
+                `${customer.id}`.includes(idFilter) &&
+                customer.gender.toLowerCase().includes(genderFilter) &&
                 customer.firstName.toLowerCase().includes(nameFilter) &&
                 customer.lastName.toLowerCase().includes(lastnameFilter) &&
                 customer.email.toLowerCase().includes(emailFilter) &&
-                genderActual &&
-                (customer.gender.toLowerCase() === "male" ||
-                customer.gender.toLowerCase() === "female" ||
-                customer.gender.toLowerCase() === "bigender") &&
                 customer.ipAddress.toLowerCase().includes(addressFilter) &&
                 customer.country.toLowerCase().includes(countryFilter)
-            });
+            );
 
             currentPage = 1; // Reiniciar pag  
             showCustomers();//  clientes filtrados
@@ -190,6 +183,7 @@
         const start = (actualPage - 1) * limitPage;
         const end = start + limitPage; 
         const customersActualPage = copyCustomers.slice(start, end);
+        const totalPages = Math.ceil(copyCustomers.length / limitPage)
 
         customersActualPage.forEach(customer => {
             const row = document.createElement("tr");
@@ -215,6 +209,17 @@
         document.getElementById("pageNumber").textContent = `Page ${actualPage}`;
         document.getElementById("prevBtn").disabled = actualPage === 1; // Deshabilitar si estamos en la primera página
         document.getElementById("nextBtn").disabled = actualPage * limitPage >= copyCustomers.length; // Deshabilitar si estamos en la última página
+
+        if (copyCustomers.length > 0) {
+            document.getElementById("pageNumber").innerHTML = `Page ${actualPage} - Page ${totalPages}`;
+            document.getElementById("pageNumber").style.visibility = 'visible';
+            document.getElementById("prevBtn").style.visibility = 'visible';
+            document.getElementById("nextBtn").style.visibility = 'visible';
+        } else {
+            document.getElementById("pageNumber").style.visibility = 'hidden';
+            document.getElementById("prevBtn").style.visibility = 'hidden';
+            document.getElementById("nextBtn").style.visibility = 'hidden';
+        }
         } 
               
         // Cambia la página actual

@@ -60,7 +60,7 @@ namespace Customers.Controllers
             return Ok(customer);
         }
 
-        // POST api/customer - Crear un nuevo cliente
+        // POST api/customer 
         [HttpPost]
         public ActionResult<Customer> CreateCustomer([FromBody] Customer newCustomer)
         {

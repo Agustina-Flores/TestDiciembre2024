@@ -34,3 +34,4 @@ C:\Users\Acer Aspire\Downloads\C#Curso\TestApi\WebApi\obj\Debug\net8.0\ref\WebAp
 C:\Users\Acer Aspire\Downloads\C#Curso\TestApi\WebApi\bin\Debug\net8.0\json\data.json
 C:\Users\Acer Aspire\Downloads\C#Curso\TestApi\WebApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Acer Aspire\Downloads\C#Curso\TestApi\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.runtime.json
+C:\Users\Acer Aspire\Downloads\C#Curso\TestApi\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
