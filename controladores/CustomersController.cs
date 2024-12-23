@@ -104,13 +104,15 @@ namespace Customers.Controllers
 
             if (customerToDelete == null)
             {
-                return NotFound();
+                return NotFound(new { message = $"Cliente con ID {id} no encontrado." });
             }
 
             customers.Remove(customerToDelete);
             SaveCustomersInJson(customers);
 
-            return NoContent();
+
+            // Devuelve una respuesta con mensaje de éxito
+            return Ok(new { message = $"Cliente con ID {id} eliminado exitosamente." });
         }
 
     }

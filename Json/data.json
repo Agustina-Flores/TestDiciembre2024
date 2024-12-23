@@ -8989,23 +8989,5 @@
     "Gender": "Female",
     "ip_address": "102.71.128.89",
     "Country": "France"
-  },
-  {
-    "Id": 1001,
-    "first_name": "Paul",
-    "last_name": "Brilll",
-    "Email": "paul@uol.br",
-    "Gender": "male",
-    "ip_address": "9.098.988",
-    "Country": "Brazil"
-  },
-  {
-    "Id": 1002,
-    "first_name": "Paul",
-    "last_name": "Brill",
-    "Email": "p@gmail.cl",
-    "Gender": "male",
-    "ip_address": "9.789.456",
-    "Country": "Chile"
   }
 ]
