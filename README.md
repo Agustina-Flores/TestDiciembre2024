@@ -75,7 +75,7 @@ http://localhost:5029/index.html
 
 ### 4. [**DELETE /customer/**]
 
-**Descripción**: Elimina un cliente : http://localhost:5029/api/customer/1002
+**Descripción**: Elimina un cliente : http://localhost:5029/api/customer/1003
 
 **Cuerpo de la solicitud (Request Body)**:  
 ![alt text](./capturas/image11.png)
