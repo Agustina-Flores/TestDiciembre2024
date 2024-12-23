@@ -8,7 +8,7 @@ y un frontend en HTML, CSS y JavaScript.
 - **.NET SDK**: [Descargar aquí](https://dotnet.microsoft.com/download)
 - **Visual Studio Code** o cualquier editor de texto.
 - **Navegador web** para probar la interfaz.
-- Newtonsoft.Json: Biblioteca para trabajar con JSON.
+- **Newtonsoft.Json:** Biblioteca para trabajar con JSON.
 
 ## Instrucciones de instalación y ejecución
 
@@ -18,23 +18,23 @@ y un frontend en HTML, CSS y JavaScript.
 
    git clone https://github.com/Agustina-Flores/TestDiciembre2024.git
 
-2 Directorio
+2. Directorio
 
--cd TestDiciembre2024-master\TestDiciembre2024-master
+- cd TestDiciembre2024-master\TestDiciembre2024-master
 
 ### Instalar dependencias del backend:
 
-Restaurar dependencias de .NET
+-Restaurar dependencias de .NET:
 
--dotnet restore
+dotnet restore
 
-Newtonsoft.Json si no está presente en el proyecto:
+-Newtonsoft.Json si no está presente en el proyecto:
 
--dotnet add package Newtonsoft.Json
+dotnet add package Newtonsoft.Json:
 
-Ejecutar la API
+-Ejecutar la API
 
--dotnet run
+dotnet run
 
 La API estará disponible en la siguiente URL :
 
@@ -63,7 +63,7 @@ http://localhost:5029/index.html
 - Datos modificados
   ![alt text](./capturas/image3.png)
 
-- Delete
+- Eliminar Cliente
   ![alt text](./capturas/image4.png)
 
 **Obtener Datos de un Cliente por ID:**

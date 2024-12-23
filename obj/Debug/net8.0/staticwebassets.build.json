@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y48Qbg0m/5bzC0DecDepydBYuTIrd5btXWHLnmuSojg=",
+  "Hash": "iTfS4G76k9Ym7899RMN/tq4rZosYk3f8Gr+OcWADNwI=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
@@ -150,12 +150,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\script.js",
+      "Identity": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\js\\script.js",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
-      "RelativePath": "script.js",
+      "RelativePath": "js/script.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\script.js"
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
     }
   ]
 }

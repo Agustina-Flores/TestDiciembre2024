@@ -29,8 +29,8 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\script.js",
-      "PackagePath": "staticwebassets\\script.js"
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
