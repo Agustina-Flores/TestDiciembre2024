@@ -199,10 +199,10 @@
                 <td>${customer.country}</td>
                 <td>
                 <button onclick="handleCustomerForm(${customer.id})">
-                <img src="edit.jpg"  style="width: 30px; height: 30px;">
+                <img src="images/edit.jpg"  style="width: 30px; height: 30px;">
                 </button>
                 <button onclick="deleteCustomer(${customer.id})">
-                <img src="delete.jpg" style="width: 30px; height: 30px;">
+                <img src="images/delete.jpg" style="width: 30px; height: 30px;">
                 </button>
                 </td>`;
             tableBody.appendChild(row);
