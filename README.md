@@ -47,4 +47,12 @@ El frontend se encuentra en index.html, que se puede acceder en el navegador en:
 
 http://localhost:5029/index.html
 
+<<<<<<< HEAD
 (index.html esta en la carpeta wwwroot.)
+=======
+(index.html esta en  la carpeta wwwroot.) 
+
+
+
+
+>>>>>>> c1748bda0dd98cbeffdf17f0802d969b1f71bf46
