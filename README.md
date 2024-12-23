@@ -50,6 +50,12 @@ http://localhost:5029/index.html
 
 (index.html esta en la carpeta wwwroot.)
 
+### Despliegue en Vercel
+
+Proyecto desplegado en Vercel. Enlace:
+
+https://test-diciembre2024-71ek.vercel.app/
+
 ## Endpoints de la API
 
 ### 1. [**GET /customer/**]
