@@ -57,8 +57,9 @@ http://localhost:5029/index.html
 Agregar Nuevo Cliente 
 ![image](https://github.com/user-attachments/assets/48d0d7bf-21bd-4310-b75f-6e89c2e64eea)
 
-Edita Cliente
+Editar Cliente
 ![image](https://github.com/user-attachments/assets/2394815b-88bb-4d16-a122-a8e6c5b01a03)
+Datos modificados
 ![image](https://github.com/user-attachments/assets/38aabaf4-9db7-4ecf-9bce-1563475c3479)
 
 Delete
