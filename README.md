@@ -52,27 +52,27 @@ http://localhost:5029/index.html
 
 ## Endpoints de la API
 
-### 1. [**GET /customer/**](http://localhost:5029/api/customer)
+### 1. [**GET /customer/**]
 
-**Descripción**: Obtiene la lista de todos los clientes.
+**Descripción**: Obtiene la lista de todos los clientes: http://localhost:5029/api/customer
 **Cuerpo de la solicitud (Request Body)**:  
 ![alt text](./capturas/image12.png)
 
-### 2. [**POST /customer/**](http://localhost:5029/api/customer)
+### 2. [**POST /customer/**]
 
-**Descripción**: Crea un nuevo cliente.
+**Descripción**: Crea un nuevo cliente: http://localhost:5029/api/customer
 **Cuerpo de la solicitud (Request Body)**:  
 ![alt text](./capturas/image9.png)
 
-### 3. [**PUT /customer/**](http://localhost:5029/api/customer/{id})
+### 3. [**PUT /customer/**]
 
-**Descripción**: Edita un cliente.
+**Descripción**: Edita un cliente: http://localhost:5029/api/customer/{id}
 **Cuerpo de la solicitud (Request Body)**:  
 ![alt text](./capturas/image10.png)
 
 ### 4. [**DELETE /customer/**](http://localhost:5029/api/customer/{id})
 
-**Descripción**: Elimina un cliente.
+**Descripción**: Elimina un cliente : http://localhost:5029/api/customer/{id}
 **Cuerpo de la solicitud (Request Body)**:  
 ![alt text](./capturas/image11.png)
 
