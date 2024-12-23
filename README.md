@@ -9,6 +9,7 @@ y un frontend en HTML, CSS y JavaScript.
 - **Visual Studio Code** o cualquier editor de texto.
 - **Navegador web** para probar la interfaz.
 - **Newtonsoft.Json:** Biblioteca para trabajar con JSON.
+- **Postman** para probar las rutas de la API.
 
 ## Instrucciones de instalación y ejecución
 
@@ -48,6 +49,30 @@ El frontend se encuentra en index.html, que se puede acceder en el navegador en:
 http://localhost:5029/index.html
 
 (index.html esta en la carpeta wwwroot.)
+
+## Endpoints de la API
+
+### 1. [**GET /customer/**](http://localhost:5029/api/customer)
+
+**Descripción**: Obtiene la lista de todos los clientes.
+
+### 2. [**POST /customer/**](http://localhost:5029/api/customer)
+
+**Descripción**: Crea un nuevo cliente.
+**Cuerpo de la solicitud (Request Body)**:  
+![alt text](./capturas/image9.png)
+
+### 3. [**PUT /customer/**](http://localhost:5029/api/customer/{id})
+
+**Descripción**: Edita un cliente.
+**Cuerpo de la solicitud (Request Body)**:  
+![alt text](./capturas/image10.png)
+
+### 4. [**DELETE /customer/**](http://localhost:5029/api/customer/{id})
+
+**Descripción**: Elimina un cliente.
+**Cuerpo de la solicitud (Request Body)**:  
+![alt text](./capturas/image11.png)
 
 ### Capturas de pantalla del proyecto
 
