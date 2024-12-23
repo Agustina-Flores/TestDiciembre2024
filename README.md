@@ -55,6 +55,8 @@ http://localhost:5029/index.html
 ### 1. [**GET /customer/**](http://localhost:5029/api/customer)
 
 **Descripción**: Obtiene la lista de todos los clientes.
+**Cuerpo de la solicitud (Request Body)**:  
+![alt text](./capturas/image12.png)
 
 ### 2. [**POST /customer/**](http://localhost:5029/api/customer)
 
