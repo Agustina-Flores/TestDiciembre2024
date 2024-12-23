@@ -48,4 +48,27 @@ El frontend se encuentra en index.html, que se puede acceder en el navegador en:
 http://localhost:5029/index.html
 
 (index.html esta en  la carpeta wwwroot.)
- 
+
+### Capturas de pantalla del proyecto
+
+**Formulario para agregar/editar cliente:**
+![image](https://github.com/user-attachments/assets/67b9ff8b-d534-4f1b-9bf5-8bcc581af149)
+
+Agregar Nuevo Cliente 
+![image](https://github.com/user-attachments/assets/48d0d7bf-21bd-4310-b75f-6e89c2e64eea)
+
+Edita Cliente
+![image](https://github.com/user-attachments/assets/2394815b-88bb-4d16-a122-a8e6c5b01a03)
+![image](https://github.com/user-attachments/assets/38aabaf4-9db7-4ecf-9bce-1563475c3479)
+
+Delete
+![image](https://github.com/user-attachments/assets/3a821d2c-ae25-48fc-a815-161f94af9940)
+
+**Obtener Datos de un Cliente por ID:**
+![image](https://github.com/user-attachments/assets/01339c2e-d0fd-4f2d-a852-3844d6396ffa)
+
+**Listado de Clientes**
+![image](https://github.com/user-attachments/assets/c706f195-869a-4b94-84d0-f5e40de045c9)
+
+
+
