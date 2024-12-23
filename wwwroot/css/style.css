@@ -1,9 +1,18 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
+  margin: 0;
+  height: 100vh;
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: moveBackground 10s linear infinite;
+} 
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  padding-top: 30px;
   text-align: center;
 }
 h1 {
@@ -102,11 +111,11 @@ table th {
 }
  
 table tr {
-  background-color: #acc2e9; /* Celeste claro */
+  background-color: #acc2e9;
 }
  
 table tr:hover {
-  background-color: #969ba3; /* Celeste claro */
+  background-color: #969ba3; 
 }
 
 .pagination {

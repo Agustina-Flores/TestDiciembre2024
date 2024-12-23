@@ -1,12 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\delete.jpg",
-      "PackagePath": "staticwebassets\\delete.jpg"
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\edit.jpg",
-      "PackagePath": "staticwebassets\\edit.jpg"
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\images\\add.jpg",
+      "PackagePath": "staticwebassets\\images\\add.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\images\\delete.jpg",
+      "PackagePath": "staticwebassets\\images\\delete.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\images\\edit.jpg",
+      "PackagePath": "staticwebassets\\images\\edit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\images\\list.jpg",
+      "PackagePath": "staticwebassets\\images\\list.jpg"
     },
     {
       "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\index.html",
@@ -15,10 +31,6 @@
     {
       "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\script.js",
       "PackagePath": "staticwebassets\\script.js"
-    },
-    {
-      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\style.css",
-      "PackagePath": "staticwebassets\\style.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",

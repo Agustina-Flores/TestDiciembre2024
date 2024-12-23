@@ -26,9 +26,8 @@ namespace Customers.Controllers
             }
             catch (JsonException ex)
             {
-                // Maneja cualquier error en la deserialización
                 Console.WriteLine($"Error al deserializar JSON: {ex.Message}");
-                return new List<Customer>();  // Retorna una lista vacía si la deserialización falla
+                return new List<Customer>();
             }
         }
 
@@ -47,7 +46,7 @@ namespace Customers.Controllers
             return Ok(customers);
         }
 
-        // GET api/customer/{id} - Obtener un cliente específico por su ID
+        // GET api/customer/{id} 
         [HttpGet("{id}")]
         public ActionResult<Customer> GetCustomer(int id)
         {
@@ -65,38 +64,38 @@ namespace Customers.Controllers
         public ActionResult<Customer> CreateCustomer([FromBody] Customer newCustomer)
         {
             var customers = LoadCustomers();
-            newCustomer.Id = customers.Any() ? customers.Max(c => c.Id) + 1 : 1; // Asignar un ID único
+            newCustomer.Id = customers.Any() ? customers.Max(c => c.Id) + 1 : 1;
             customers.Add(newCustomer);
             SaveCustomersInJson(customers);
 
             return CreatedAtAction(nameof(GetCustomer), new { id = newCustomer.Id }, newCustomer);
         }
 
-        // PUT api/customer/{id} - Actualizar un cliente por su ID
+        // PUT api/customer/{id} 
         [HttpPut("{id}")]
         public ActionResult UpdateCustomer(int id, [FromBody] Customer updatedCustomer)
         {
             var customers = LoadCustomers();
-            var existingCustomer = customers.FirstOrDefault(c => c.Id == id);
+            var currentCustomer = customers.FirstOrDefault(c => c.Id == id);
 
-            if (existingCustomer == null)
+            if (currentCustomer == null)
             {
                 return NotFound();
             }
 
-            // Actualizar los datos del cliente
-            existingCustomer.FirstName = updatedCustomer.FirstName;
-            existingCustomer.LastName = updatedCustomer.LastName;
-            existingCustomer.Email = updatedCustomer.Email;
-            existingCustomer.Gender = updatedCustomer.Gender;
-            existingCustomer.IpAddress = updatedCustomer.IpAddress;
+            currentCustomer.FirstName = updatedCustomer.FirstName;
+            currentCustomer.LastName = updatedCustomer.LastName;
+            currentCustomer.Email = updatedCustomer.Email;
+            currentCustomer.Gender = updatedCustomer.Gender;
+            currentCustomer.IpAddress = updatedCustomer.IpAddress;
+            currentCustomer.Country = updatedCustomer.Country;
 
             SaveCustomersInJson(customers);
 
-            return NoContent(); // 204 No Content
+            return NoContent();
         }
 
-        // DELETE api/customer/{id} - Eliminar un cliente por su ID
+        // DELETE api/customer/{id}  
         [HttpDelete("{id}")]
         public ActionResult DeleteCustomer(int id)
         {
@@ -111,7 +110,7 @@ namespace Customers.Controllers
             customers.Remove(customerToDelete);
             SaveCustomersInJson(customers);
 
-            return NoContent(); // 204 No Content
+            return NoContent();
         }
 
     }
