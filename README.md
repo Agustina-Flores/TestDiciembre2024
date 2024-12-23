@@ -51,5 +51,29 @@ http://localhost:5029/index.html
 
 ### Capturas de pantalla del proyecto
 
-##Formulario para agregar/editar cliente:##
+**Formulario para agregar/editar cliente:**
 ![alt text](./capturas/image.png)
+
+- Agregar Nuevo Cliente
+  ![alt text](./capturas/image1.png)
+
+- Editar Cliente
+  ![alt text](./capturas/image2.png)
+
+- Datos modificados
+  ![alt text](./capturas/image3.png)
+
+- Delete
+  ![alt text](./capturas/image4.png)
+
+**Obtener Datos de un Cliente por ID:**
+![alt text](./capturas/image5.png)
+
+**Listado de Clientes con Paginación**
+![alt text](./capturas/image6.png)
+
+**Filtros**
+![alt text](./capturas/image7.png)
+
+**Cambio de orden en el encabezado**
+![alt text](./capturas/image8.png)
