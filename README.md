@@ -68,8 +68,12 @@ Delete
 **Obtener Datos de un Cliente por ID:**
 ![image](https://github.com/user-attachments/assets/01339c2e-d0fd-4f2d-a852-3844d6396ffa)
 
-**Listado de Clientes**
+**Listado de Clientes con Paginación**
 ![image](https://github.com/user-attachments/assets/c706f195-869a-4b94-84d0-f5e40de045c9)
+
+**Cambio de orden en el encabezado**
+![image](https://github.com/user-attachments/assets/17444e49-06d7-41a5-a3ff-56e909209704)
+
 
 
 
