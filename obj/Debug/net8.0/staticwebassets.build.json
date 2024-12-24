@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iTfS4G76k9Ym7899RMN/tq4rZosYk3f8Gr+OcWADNwI=",
+  "Hash": "TuEJNxN+00SqIHCgWkZe5ijmP0G0l7/oeIPmzlx1qUg=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\Json\\data.json",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "Json/data.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Json\\data.json"
     }
   ]
 }

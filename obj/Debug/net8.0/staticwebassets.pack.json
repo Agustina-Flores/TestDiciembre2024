@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\Json\\data.json",
+      "PackagePath": "staticwebassets\\Json\\data.json"
+    },
+    {
       "Id": "C:\\Users\\Acer Aspire\\Downloads\\C#Curso\\TestApi\\WebApi\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },

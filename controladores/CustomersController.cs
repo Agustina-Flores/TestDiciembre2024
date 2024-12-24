@@ -14,12 +14,22 @@ namespace Customers.Controllers
     {
 
         //ruta del archivo json
-        private readonly string _jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Json", "data.json");
+        private readonly string _jsonFilePath;
 
+        public CustomerController(IHostEnvironment env)
+        {
+            // Usamos Directory.GetCurrentDirectory() para acceder al directorio raíz
+            // y luego accedemos a la carpeta wwwroot/Json
+            _jsonFilePath = Path.Combine(env.ContentRootPath, "wwwroot", "Json", "data.json");
+        }
         private List<Customer> LoadCustomers()
         {
             try
             {
+                if (!System.IO.File.Exists(_jsonFilePath))
+                {
+                    return new List<Customer>(); // Si no existe el archivo, retornamos una lista vacía
+                }
                 var jsonData = System.IO.File.ReadAllText(_jsonFilePath);
                 var customers = JsonConvert.DeserializeObject<List<Customer>>(jsonData);
                 return customers;
@@ -35,7 +45,7 @@ namespace Customers.Controllers
         private void SaveCustomersInJson(List<Customer> customers)
         {
             var jsonData = JsonConvert.SerializeObject(customers, Formatting.Indented);
-            var jsonDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Json");
+            var jsonDirectory = Path.GetDirectoryName(_jsonFilePath);
             if (!Directory.Exists(jsonDirectory))
             {
                 Directory.CreateDirectory(jsonDirectory);
