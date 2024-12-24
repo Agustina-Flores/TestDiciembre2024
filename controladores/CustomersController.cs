@@ -14,7 +14,7 @@ namespace Customers.Controllers
     {
 
         //ruta del archivo json
-        private readonly string _jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json", "data.json");
+        private readonly string _jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Json", "data.json");
 
         private List<Customer> LoadCustomers()
         {
@@ -35,6 +35,12 @@ namespace Customers.Controllers
         private void SaveCustomersInJson(List<Customer> customers)
         {
             var jsonData = JsonConvert.SerializeObject(customers, Formatting.Indented);
+            var jsonDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Json");
+            if (!Directory.Exists(jsonDirectory))
+            {
+                Directory.CreateDirectory(jsonDirectory);
+            }
+
             System.IO.File.WriteAllText(_jsonFilePath, jsonData);
         }
 
